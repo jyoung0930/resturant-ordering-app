@@ -7,7 +7,75 @@
     <title>Restaurant Ordering App</title>
   </head>
   <body>
-    <h1>Restaurant Ordering App</h1>
+    <main id="main">
+      <header id="header"></header>
+      <!-- start of menu -->
+      <section id="menu">
+        <ul id="menu-items">
+          <li id="burger">
+            <div class="info">
+              <img src="images/burger.png" alt="Image of a burger" />
+              <div class="item-info">
+                <h3 class="item">Hamburger</h3>
+                <h3 class="ingredients">beef, cheese, lettuce</h3>
+                <h3 class="price">$12</h3>
+              </div>
+            </div>
+            <img class="add-btn" src="images/add btn.png" alt="add button" />
+            <hr />
+          </li>
+          <li id="pizza">
+            <div class="info">
+              <img src="images/pizza.png" alt="Image of a pizza" />
+              <div class="item-info">
+                <h3 class="item">Pizza</h3>
+                <h3 class="ingredients">beef, cheese, lettuce</h3>
+                <h3 class="price">$12</h3>
+              </div>
+            </div>
+            <img class="add-btn" src="images/add btn.png" alt="add button" />
+            <hr />
+          </li>
+          <li id="beer">
+            <div class="info">
+              <img src="images/beer.png" alt="Image of a glass of beer" />
+              <div class="item-info">
+                <h3 class="item">Beer</h3>
+                <h3 class="ingredients">grain, hops, yeast, water</h3>
+                <h3 class="price">$12</h3>
+              </div>
+            </div>
+
+            <img class="add-btn" src="images/add btn.png" alt="add button" />
+            <hr />
+          </li>
+        </ul>
+      </section>
+      <!-- end of menu -->
+      <!-- start of cart -->
+      <section id="cart">
+        <h2 id="cart-title">Your Order</h2>
+        <div id="order-items">
+          <ul id="cart-items">
+            <!-- Order items will be dynamically added here -->
+            <li class="order-item">
+              <div>
+                <h3 class="item-name">Pizza</h3>
+                <h3 class="remove-item">Remove</h3>
+              </div>
+              <h3 class="item-price">$12</h3>
+            </li>
+          </ul>
+        </div>
+        <div id="total-section">
+          <h3 id="total-text">Total Price:</h3>
+          <h3 id="total-amount">$0</h3>
+        </div>
+        <button id="complete-order-btn">Complete Order</button>
+      </section>
+      <!-- end of cart -->
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
